@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta name="viewport" content="width=720, height=1280, user-scalable=no" />
+	<script type="text/javascript" src="./css/car/components/jQuery/jquery-1.8.2.js"></script>
+	<link rel="stylesheet" href="./css/car/car.css" />
+	<script type="text/javascript"	src="./css/car/components/knockout/knockout.js"></script>
+	
+	<link rel="stylesheet" href="./css/car/components/incomingCall/incomingCall.css" />
+	
+	<script type='text/javascript' src='./js/services/bootstrap.js'></script>
+
+	<script type="text/javascript" src='./css/car/car.js'></script>
+	<script type="text/javascript" src="./css/car/components/jsViews/jsrender.js"></script>
+	
+	<script type="text/javascript" src="./css/car/components/async/async.js"></script>
+	<script type="text/javascript" src="./css/car/components/tween/tween.min.js"></script>
+
+	<script type="text/javascript" src="./css/car/components/jsViews/template.js"></script>
+
+	<script type='text/javascript' src='./css/car/components/boxCaption/boxCaption.js'></script>
+	<link rel="stylesheet" href="./css/car/components/boxCaption/boxCaption.css" />
+	
+	<script type='text/javascript' src='./css/car/components/topBarIcons/topBarIcons.js'></script>
+	<link rel="stylesheet" href="./css/car/components/topBarIcons/topBarIcons.css" />
+	
+	<script type="text/javascript" src="./css/car/components/bottomPanel/bottomPanel.js"></script>
+	
+	<script type="text/javascript" src="./css/car/components/progressBar/progressBar.js"></script>
+	<link rel="stylesheet" href="./css/car/components/progressBar/progressBar.css" />
+
+	<script type="text/javascript" src='./css/car/components/alphabetBookmark/alphabetBookmark.js'></script>
+	<link rel="stylesheet" href="./css/car/components/alphabetBookmark/alphabetBookmark.css" />
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<script type="text/javascript" src="./js/ace.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="./js/vehicle.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="./js/demoScriptsController.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="./js/scriptController.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="./js/propertiesController.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="./js/simulator.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="./js/main.js"  charset="utf-8"></script>
+
+	<script type="text/javascript" src='./css/car/components/library/library.js'></script>
+	<link rel="stylesheet" href="./css/car/components/library/library.css" />
+
+	<title>AMB Simulator</title>
+</head>
+
+<body>
+	
+
+	<div id="wrapper" class="wrapper">
+		<div id="topBarIcons"></div>
+
+		<div id="libraryButton"
+			class="libraryButton fontSizeSmaller fontWeightBold fontColorNormal">PROPERTIES</div>
+		
+		<div id="buttonPanel">
+			<div id="loadConfigButton" class="button">
+				<div class="bgColorThemeTransparent boxShadowInset button buttonOpacity"></div>
+				<div class="buttonText fontColorNormal fontSizeSmaller fontWeightBold">Load script</div>
+			</div>
+			<div id="saveConfigButton" class="button">
+				<div class="bgColorThemeTransparent boxShadowInset button buttonOpacity"></div>
+				<div class="buttonText fontColorNormal fontSizeSmaller fontWeightBold">Save script</div>
+			</div>
+			<div id="runConfigButton" class="button">
+				<div class="bgColorThemeTransparent boxShadowInset button buttonOpacity"></div>
+				<div class="buttonText fontColorNormal fontSizeSmaller fontWeightBold">Run script</div>
+			</div>
+		</div>
+
+		<!--  <div id="textArea" class="fontSizeSmaller" ></div>  -->
+		<textarea id="textArea" class="fontSizeSmaller userSelectable"></textarea>
+		<div class="fontColorNormal fontSizeSmaller bgColorThemeTransparent ambConsolePanel">
+			<span>amblog:</span>
+			<div id="clearConsoleBtn" class="button">
+				<div class="bgColorThemeTransparent boxShadowInset button buttonOpacity"></div>
+				<div class="buttonText fontColorNormal fontSizeSmaller fontWeightBold">Clear</div>
+			</div>
+		</div>
+		<div id="ambConsole" class="ambConsole fontColorNormal fontSizeSmaller">
+		</div>
+	</div>
+
+	<div id="properties" class="library pageBgColorNormalTransparent"></div>
+
+	<div id="bottomPanel" class="bottomPanel bottomPanelImg"></div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+#textArea {
+	width: 720px;
+	height: 740px;
+	top: 150px;
+	position: absolute;
+	color: rgb(0, 0, 0);
+	z-index: 40;
+    resize: none;
+    -webkit-user-select: text;
+}
+
+.ambConsolePanel {
+	position: absolute;
+	top: 890px;
+	width: 700px;
+	height: 30px;
+	padding: 0 10px;
+}
+
+.ambConsolePanel span {
+	line-height: 30px;
+}
+
+.ambConsolePanel .button {
+	height: 25px;
+	width: 80px;
+}
+
+.ambConsolePanel .button .buttonText {
+	top: -23px
+}
+
+.ambConsole .logItem {
+	width: 100%;
+	display: block;
+}
+
+#clearConsoleBtn {
+	position: absolute;
+	top: 3px;
+	right: 10px;
+}
+
+.ambConsole {
+	position: absolute;
+	top: 920px;
+	width: 700px;
+	height: 160px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin: 10px 10px 0 10px;
+}
+
+.ambConsole .timestamp {
+	float: right;
+	color: rgb(120, 120, 120);
+}
+
+.button {
+	width: 140px;
+	height: 45px;
+}
+
+.buttonOpacity {
+	opacity: 0.5;
+}
+
+.button .buttonText {
+	position: relative;
+	text-align: center;
+	top: -32px
+}
+
+#libraryButton {
+	top: 94px;
+}
+
+#buttonPanel {
+	top: 80px;
+	position: absolute;
+}
+
+#loadConfigButton, #saveConfigButton, #runConfigButton {
+	text-transform: uppercase;
+	float: left;
+	margin: 16px 8px 0 8px;
+}
+
+.libraryTopSubPanel {
+	padding-left: 20px
+}
+
+.propertyDetail {
+	padding: 20px;
+}
+
+.propertyDetail .inputBox .input {
+	width: 140px;
+	height: 40px;
+	padding: 0 10px;
+}
+
+.zonesContainer {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+}
+
+.zone {
+	width: 25%;
+}
+
+.marginBtm20 {
+	margin-bottom: 20px;
+}
+
+.propertyText {
+	padding: 10px;
+}
+
+.propertyDetailTwoBtnWrapper {
+	width: 290px;
+	margin: auto;
+}
+
+.propertyDetailBtn {
+	position: absolute;
+	text-transform: uppercase;
+}
+
+.userSelectable {
+	-webkit-user-select: text;	
+}
+
+.wrongValue {
+	background-color: rgb(255, 60, 60);
+}
+
+.subPanelElement {
+	float: left;
+}
+
+span.subPanelElement {
+	line-height: 45px;
+}
+
+.input.subPanelElement {
+	width: 240px;
+	height: 45px;
+	margin: auto 30px;
+	padding-right: 25px;
+}

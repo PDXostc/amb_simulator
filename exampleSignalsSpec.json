@@ -1,0 +1,41 @@
+{
+	"sources": 
+	[
+		{
+			"source": 
+			{
+				"guid": "CAN", 
+				"index": 1
+			},
+			"signals": 
+			[
+				{
+					"name": "SeatHeater",
+					"can_id": 1,
+					"lastValue": 0,
+					"hasZones": [9, 5]
+				}, {
+					"name": "SeatHeater1",
+					"can_id": 1,
+					"lastValue": 0,
+					"hasZones": [9, 5, 8]
+				}
+			]
+		}, {
+			"source": 
+			{
+				"guid": "OBD", 
+				"index": 1
+			},
+			"signals": 
+			[
+				{
+					"name": "SeatHeaterOBD",
+					"can_id": 1,
+					"lastValue": 0,
+					"hasZones": [9, 5]
+				}
+			]
+		}
+	]
+}
