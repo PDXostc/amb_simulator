@@ -1,4 +1,4 @@
-PROJECT = HomeScreen
+PROJECT = AMBSimulator
 INSTALL_FILES = images js icon.png index.html
 
 VERSION := 0.0.1

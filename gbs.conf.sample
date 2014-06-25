@@ -1,0 +1,25 @@
+#----------------------------------------------------------------
+# -- Configuration file for GBS build system
+#    This SAMPLE file could be copied to ~/.gbs.conf
+#    Be sure to fill in the usernames and passwords below.
+#----------------------------------------------------------------
+[general]
+tmpdir=/var/tmp/
+profile = profile.the_master
+work_dir=.
+buildroot=/home/${USER}/GBS_REMOTE_BUILD
+
+[profile.the_master]
+obs = obs.master
+repos=repo.build_on_the_master
+buildconf=${work_dir}/build-config/build.conf
+user = <gbs.username>
+passwd = <gbs.password>
+
+[repo.build_on_the_master]
+url = http://obs-master:82/Tizen:/3.0-M2-EOY:/AGL/standard
+
+[obs.master]
+url = https://obs-master:444
+user = <obs.username>
+passwd = <obs.password>
