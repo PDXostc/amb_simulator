@@ -97,7 +97,7 @@ ScriptController.loadScript = function() {
  */
 ScriptController.resolveFS = function(resolvedCallback) {
 	"use strict";
-	tizen.filesystem.resolve("/home/app", resolvedCallback, ScriptController.error);
+	tizen.filesystem.resolve("documents", resolvedCallback, ScriptController.error);
 };
 
 /**
