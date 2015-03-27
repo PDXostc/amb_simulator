@@ -1,4 +1,7 @@
 # Known Issues
+3/27/2015: Still having problem with loading scripts; probably a permissions issue.
+
+History:
 I forgot to merge in my Refactor_for_JLR_signals branch into master before it was pushed to gerrit.
 With those changes (which these files enhance) it builds the correct AMBSimulator-0.0.1-1.1.i686.rpm.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://com.intel.tizen/ambsimulator" version="1.0.0" viewmodes="fullscreen">
-    <tizen:application id="intelPoc18.AMBSimulator" package="intelPoc18" required_version="2.1"/>
+    <tizen:application id="JLRPOCX018.AMBSimulator" package="JLRPOCX018" required_version="2.1"/>
     <content src="index.html"/>
     <icon src="icon.png"/>
     <name>AMB Simulator</name>
