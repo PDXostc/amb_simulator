@@ -1,6 +1,6 @@
 PROJECT = JLRPOCX018.AMBSimulator
 INSTALL_FILES = images js icon.png index.html
-WRT_FILES = DNA_common css icon.png index.html setup config.xml js manifest.json images
+WRT_FILES = DNA_common css icon.png index.html setup config.xml js manifest.json images templates
 VERSION := 0.0.1
 PACKAGE = $(PROJECT)-$(VERSION)
 
@@ -39,15 +39,6 @@ ifndef OBS
 	ssh app@$(TIZEN_IP) "pkgcmd -i -t wgt -p /home/app/JLRPOCX018.AMBSimulator.wgt -q"
 else
 	cp -r $(PROJECT).wgt ${DESTDIR}/opt/usr/apps/.preinstallWidgets/
-endif
-
-ifndef OBS
-install: deploy
-	ssh app@$(TIZEN_IP) "export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/user/5000/dbus/user_bus_socket' && xwalkctl | egrep -e 'AMBSimulator' | awk '{print $1}' | xargs --no-run-if-empty xwalkctl -u"
-	ssh app@$(TIZEN_IP) "export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/user/5000/dbus/user_bus_socket' && xwalkctl -i /home/app/JLRPOCX018.AMBSimulator.wgt"
-else
-install: 
-	cp -r JLRPOCX018.AMBSimulator.wgt ${DESTDIR}/opt/usr/apps/.preinstallWidgets/
 endif
 
 install_obs: 
